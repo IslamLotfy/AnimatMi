@@ -7,18 +7,18 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
-        <OnSwipe
-            motion:touchAnchorId="@+id/motionLayout"
+        <OnClick
+            motion:touchAnchorId="@+id/fab"
             motion:touchAnchorSide="top"
             motion:dragDirection="dragUp" />
-       <KeyFrameSet>
-           <KeyPosition
-               motion:motionTarget="@+id/button_fifth"
-               motion:framePosition="50"
-               motion:percentX="0.87"
-               motion:percentY="0.049" />
-           <KeyPosition
-               motion:motionTarget="@+id/button_sixth"
+        <KeyFrameSet>
+            <KeyPosition
+                motion:motionTarget="@+id/button_fifth"
+                motion:framePosition="50"
+                motion:percentX="0.87"
+                motion:percentY="0.049" />
+            <KeyPosition
+                motion:motionTarget="@+id/button_sixth"
                motion:framePosition="50"
                motion:percentX="0.87"
                motion:percentY="0.049" />

@@ -1,17 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layoutDescription="@xml/fragment_second_scene"
+    tools:context=".SecondFragment">
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+    <ImageButton
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_second"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_third"
+        app:layout_constraintStart_toEndOf="@id/button_first"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_forth"
+        app:layout_constraintStart_toEndOf="@id/button_second"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_forth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_third"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_sixth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_first" />
+
+    <ImageButton
+        android:id="@+id/button_sixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_seventh"
+        app:layout_constraintStart_toEndOf="@id/button_fifth"
+        app:layout_constraintTop_toBottomOf="@id/button_second" />
+
+    <ImageButton
+        android:id="@+id/button_seventh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_eight"
+        app:layout_constraintStart_toEndOf="@id/button_sixth"
+        app:layout_constraintTop_toBottomOf="@id/button_third" />
+
+    <ImageButton
+        android:id="@+id/button_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_seventh"
+        app:layout_constraintTop_toBottomOf="@id/button_forth" />
+
+    <ImageButton
+        android:id="@+id/button_nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_ten"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_fifth" />
+
+    <ImageButton
+        android:id="@+id/button_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_eleven"
+        app:layout_constraintStart_toEndOf="@id/button_nine"
+        app:layout_constraintTop_toBottomOf="@id/button_sixth" />
+
+    <ImageButton
+        android:id="@+id/button_eleven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toStartOf="@id/button_twelve"
+        app:layout_constraintStart_toEndOf="@id/button_ten"
+        app:layout_constraintTop_toBottomOf="@id/button_seventh" />
+
+    <ImageButton
+        android:id="@+id/button_twelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@android:drawable/ic_lock_idle_low_battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_eleven"
+        app:layout_constraintTop_toBottomOf="@id/button_eight" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
